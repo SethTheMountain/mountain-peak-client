@@ -1,13 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 body {
+  font-family: 'Poppins', Arial, sans-serif; /* Modern, vibrant font */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Soft gradient background */
+  color: #2c3e50; /* Darker text for contrast */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  color: #e74c3c; /* Vibrant red for headings */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-weight: 700;
+}
+
+h2 {
+  color: #e67e22; /* Bright orange for post titles */
+}
+
+/* Home Page Posts */
+.home {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post {
+  border: none; /* Remove boring border */
+  padding: 15px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
+}
+
+.post:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.post small {
+  color: #7f8c8d; /* Muted gray for dates */
+}
+
+/* Admin Login and Dashboard */
+.admin-login, .admin-dashboard {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff; /* Clean white base */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bolder shadow */
+  border: 2px solid #3498db; /* Vibrant blue border */
+}
+
+/* About Page */
+.about {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Inputs */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #3498db; /* Bright blue border */
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #e74c3c; /* Red border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5); /* Glow effect */
+}
+
+textarea {
+  min-height: 150px; /* Larger textarea for posts */
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(45deg, #3498db, #2980b9); /* Gradient blue */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #2980b9, #1abc9c); /* Shift to teal on hover */
+  transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Links */
+a {
+  color: #e74c3c; /* Vibrant red for links */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f1c40f; /* Bright yellow on hover */
+  text-decoration: underline;
+}
+
+/* Error Message */
+.error {
+  color: #e74c3c;
+  background: #fadbd8; /* Light red background */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-dashboard .post {
+  padding: 15px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.admin-dashboard .post:hover {
+  transform: translateY(-3px);
+}
+
+.admin-dashboard .post h3 {
+  margin: 0 0 5px;
+  color: #e67e22;
+}
+
+.admin-dashboard .post button {
+  background: linear-gradient(45deg, #e74c3c, #c0392b); /* Vibrant red gradient */
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.admin-dashboard .post button:hover {
+  background: linear-gradient(45deg, #c0392b, #d35400); /* Shift to orange */
+  transform: scale(1.1);
+}
+
+/* Existing styles remain unchanged, just adding this */
+.home .header {
+  display: flex;
+  justify-content: space-between; /* Pushes h1 and a apart */
+  align-items: center; /* Vertically centers them */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.home .header h1 {
+  margin: 0; /* Remove default margin for alignment */
+}
+
+.home .header a {
+  font-size: 18px; /* Slightly larger for balance */
 }
