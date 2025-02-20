@@ -1,6 +1,6 @@
 services:
   - type: static
-    name: mountains-peak-frontend
+    name: mountains-peak-client
     env: static
     buildCommand: npm install && npm run build
     staticPublishPath: build
